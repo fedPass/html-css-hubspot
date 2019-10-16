@@ -14,6 +14,21 @@ a {
     color: #33475b;
 }
 
+button {
+    padding: 9px 16px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+}
+
+.get_free {
+    color: #fff;
+    background-color: #ff7a59;
+    border: 1px solid #ff7a59;
+}
+
 .container {
     width: 70%;
     margin: 0 auto;
@@ -62,24 +77,9 @@ a {
     float: right;
 }
 
-.login_container button {
-    padding: 9px 16px;
-    border-radius: 5px;
-    margin-left: 5px;
-    cursor: pointer;
-    font-family: 'Nunito', sans-serif;
-    font-size: 12px;
-}
-
 #login {
     color: #ff7a59;
     background-color: #fff;
-    border: 1px solid #ff7a59;
-}
-
-#get_free {
-    color: #fff;
-    background-color: #ff7a59;
     border: 1px solid #ff7a59;
 }
 
@@ -137,12 +137,61 @@ a {
     content: /&#9660;
 } */
 
+.container::after {
+    clear: both;
+    display: table;
+    content: '';
+}
 
 /*------jumbo----*/
 
 .jumbo {
     /* background-image: linear-gradient(to DIREZIONE, colorestep1, colorestep2)*/
     height: 688px; /* altezza img di sfondo*/
-    background-image: url(C:\Users\Federica\Desktop\Corso Boolean\hubspot\img\Immagine.png);
+    background-image: url(\hubspot\img\Immagine.png);
     background-image: linear-gradient(to top right, #fef8f0, #fff3ee);
+}
+
+.jumbo_box {
+    width: 40%;
+}
+
+.jumbo_box h1 {
+    font-size: 59px;
+    font-weight: bold;
+    padding-top: 90px;
+    line-height: 1;
+}
+
+.jumbo_box button {
+    display: block;
+    padding: 20px 40px;
+    font-size:16px;
+    margin-bottom: 15px;
+}
+
+.jumbo_box p {
+    margin: 30px 0 15px;
+    line-height: 1.5;
+}
+
+.small_container {
+    width: 207px; /*togliendo block al button e vedendo la sua lugnhezza*/
+}
+
+#chat_icon {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background-color: #33475b;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+#chat_icon i {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
 }
