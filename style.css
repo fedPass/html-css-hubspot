@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fixed_menu {
+    background-color: #f5f8fa;
+    height: 100px;
+    border-bottom: 1px solid #cbd6e2;
+}
+
+.fixed_menu_contact {
+    width: 50%;
+    float: left;
+    height: 100px;
+    background-color: pink;
+}
+
+.fixed_menu_login {
+    width: 50%;
+    float: right;
+    height: 100px;
+    background-color: purple;
+}
+
+.fixed_menu::after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.menu {
+    background-color: #fff;
+    height: 100px;
+}
+
+.jumbo {
+    /* background-image: linear-gradient(to DIREZIONE, colorestep1, colorestep2)*/
+    height: 688px; /* altezza img di sfondo*/
+    background-image: url(C:\Users\Federica\Desktop\Corso Boolean\hubspot\img\Immagine.png);
+    background-image: linear-gradient(to top right, #fef8f0, #fff3ee);
+}
