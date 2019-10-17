@@ -23,6 +23,10 @@ button {
     font-size: 12px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .get_free {
     color: #fff;
     background-color: #ff7a59;
@@ -32,6 +36,12 @@ button {
 .container {
     width: 70%;
     margin: 0 auto;
+}
+
+.container::after {
+    clear: both;
+    display: table;
+    content: '';
 }
 
 /*------fixed menu----*/
@@ -118,11 +128,7 @@ button {
     float: right;
 }
 
-.nav_menu ul {
-    list-style-type: none;
-}
-
-.nav_menu li {
+.nav_menu li, .horiz_box_right li {
     display: inline;
 }
 
@@ -136,12 +142,6 @@ button {
 /* a.icona_menu::after {
     content: /&#9660;
 } */
-
-.container::after {
-    clear: both;
-    display: table;
-    content: '';
-}
 
 /*------jumbo----*/
 
@@ -182,18 +182,18 @@ button {
 /*------features----*/
 .features {
     background-color: #f5f8fa;
-    height: 700px;
+    padding- bottom: 50px;
     border-top: 1px solid #5380ad;
 }
 
-.features img {
+.features_text img {
     width: 250px;
     display: block;
     margin: 0 auto;
     padding: 100px 0 20px;
 }
 
-.features h2, .features p {
+.features_text h2, .features_text p {
     text-align: center;
     width: 74%; /*per far andare la frase accapo allo stesso punto*/
     margin: 0 auto;
@@ -205,6 +205,67 @@ button {
     margin-bottom: 25px;
 }
 
+/*------horiz box----*/
+
+.horizontal_box {
+    background-color: #fff;
+    box-shadow: 3px 3px 6px #e6e7e8;
+    width: 90%;
+    margin: 50px auto 25px;
+    padding-bottom: 30px;
+}
+
+.horizontal_box:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.horiz_box_left {
+    width: 40%;
+    float: left;
+}
+
+.horiz_box_left img {
+    width: 200px;
+    margin: 30px auto;
+    display: block;
+}
+
+.horiz_box_left button {
+    margin: 0 auto;
+    display: block;
+}
+
+.horiz_box_right {
+    width: 60%;
+    float: right;
+}
+
+.horiz_box_right h3 {
+    padding: 40px 0 20px;
+}
+
+.horiz_box_right p {
+    width: 80%;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.horiz_box_right h4 {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.horiz_box_right li {
+    padding-right: 15px;
+}
+
+.horiz_box_right i {
+    font-size: 13px;
+    color: #ff7a59;
+    padding-right: 8px;
+}
 
 /*------chat icon----*/
 
