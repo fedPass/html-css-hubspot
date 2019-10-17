@@ -144,12 +144,13 @@ h2 {
 .jumbo {
     /* background-image: linear-gradient(to DIREZIONE, colorestep1, colorestep2)*/
     height: 688px; /* altezza img di sfondo*/
-    background-image: url(\hubspot\img\Immagine.png);
+    background-image: url("img/Immagine.png");
     background-image: linear-gradient(to top right, #fef8f0, #fff3ee);
 }
 
 .jumbo_box {
     width: 40%;
+    float: left;
 }
 
 .jumbo_box h1 {
@@ -171,7 +172,7 @@ h2 {
     line-height: 1.5;
 }
 
-.small_container {
+.small {
     width: 207px; /*togliendo block al button e vedendo la sua lugnhezza*/
 }
 
@@ -190,10 +191,11 @@ h2 {
     padding: 100px 0 20px;
 }
 
+.features_text h2,
  .features_text p,
  .data_info p,
  .data_info h2,
- .features_text h2 {
+ .customer_script {
     text-align: center;
     width: 74%; /*per far andare la frase accapo allo stesso punto*/
     margin: 0 auto;
@@ -309,7 +311,7 @@ h2 {
 
 .data_info{
     background-image: linear-gradient(to top right, #19b2e6, #19e6e3);
-    padding-bottom: 150px;
+    padding-bottom: 120px;
 }
 
 .data_info h2,
@@ -318,11 +320,11 @@ h2 {
 }
 
 .data_info h2 {
-    padding: 150px 0 20px;
+    padding: 120px 0 20px;
 }
 
 .data_container {
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .data_row_top,
@@ -364,6 +366,56 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*------customer section----*/
+
+.customer {
+    padding-bottom: 120px;
+}
+
+.customer_script {
+    float: left;
+    margin: 120px 0;
+    text-align: left;
+    width: 40%;
+}
+
+.customer_script p {
+    font-size: 18px;
+}
+
+.customer_logo {
+    float: right;
+    margin: 120px 0;
+    width: 60%;
+}
+
+.logo_box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo_image {
+    width: 25%;
+    float: left;
+}
+
+.logo_image img {
+    width: 80%;
+    margin: 10px; auto;
+}
+
+.photo_testimonial {
+    float: right;
+}
+
+.photo_testimonial img {
+    width: 350px;
+}
+
+.jumbo_box .bottom {
+
 }
 
 /*------chat icon----*/
