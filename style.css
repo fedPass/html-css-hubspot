@@ -173,6 +173,7 @@ ul {
     background-color: #f5f8fa;
     padding- bottom: 50px;
     border-top: 1px solid #5380ad;
+    padding-bottom: 150px;
 }
 
 .features_text img {
@@ -197,7 +198,7 @@ ul {
 
 .features h4 {
     font-size: 13px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .features li {
@@ -205,9 +206,19 @@ ul {
 }
 
 .features i {
-    font-size: 13px;
+    font-size: 18px;
     color: #ff7a59;
     padding-right: 8px;
+}
+
+.features button {
+    margin: 0 auto;
+    display: block;
+}
+
+.features h3 {
+    padding: 40px 0 20px;
+    font-size: 20px;
 }
 
 /*------horiz box----*/
@@ -231,18 +242,9 @@ ul {
     display: block;
 }
 
-.horiz_box_left button {
-    margin: 0 auto;
-    display: block;
-}
-
 .horiz_box_right {
     width: 60%;
     float: right;
-}
-
-.features h3 {
-    padding: 40px 0 20px;
 }
 
 .horiz_box_right p,
@@ -278,16 +280,28 @@ ul {
 }
 
 .vertical_box p {
-    min-width: 105px;
+    /*min-height: 105px;*/
     margin: 0 auto 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #8a98a6;
+    font-size: 14px;
 
 }
 
 .vertical_box * {
     text-align: center;
 }
+
+.vertical_box li {
+    text-align: left;
+    margin-left: 28.7px;/*visto da ispeziona calcolate del p*/
+    margin-bottom: 5px;
+}
+
+.vertical_box button {
+    margin-top: 25px;
+}
+
 
 
 /*------chat icon----*/
