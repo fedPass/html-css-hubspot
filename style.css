@@ -27,6 +27,12 @@ ul {
     list-style-type: none;
 }
 
+.clearfix {
+    display: table;
+    clear: both;
+    content: "";
+}
+
 .get_free {
     color: #fff;
     background-color: #ff7a59;
@@ -36,12 +42,6 @@ ul {
 .container {
     width: 70%;
     margin: 0 auto;
-}
-
-.container::after {
-    clear: both;
-    display: table;
-    content: '';
 }
 
 /*------fixed menu----*/
@@ -98,18 +98,6 @@ ul {
     padding: 0 15px;
 }
 
-.fixed_menu_login::after {
-    clear: both;
-    display: table;
-    content: '';
-}
-
-.fixed_menu::after {
-    clear: both;
-    display: table;
-    content: '';
-}
-
 /*------menu----*/
 
 .menu {
@@ -128,7 +116,8 @@ ul {
     float: right;
 }
 
-.nav_menu li, .horiz_box_right li {
+.nav_menu li,
+.horiz_box_right li {
     display: inline;
 }
 
@@ -193,7 +182,8 @@ ul {
     padding: 100px 0 20px;
 }
 
-.features_text h2, .features_text p {
+.features_text h2,
+ .features_text p {
     text-align: center;
     width: 74%; /*per far andare la frase accapo allo stesso punto*/
     margin: 0 auto;
@@ -205,6 +195,21 @@ ul {
     margin-bottom: 25px;
 }
 
+.features h4 {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.features li {
+    padding-right: 15px;
+}
+
+.features i {
+    font-size: 13px;
+    color: #ff7a59;
+    padding-right: 8px;
+}
+
 /*------horiz box----*/
 
 .horizontal_box {
@@ -213,12 +218,6 @@ ul {
     width: 90%;
     margin: 50px auto 25px;
     padding-bottom: 30px;
-}
-
-.horizontal_box:after {
-    display: table;
-    clear: both;
-    content: "";
 }
 
 .horiz_box_left {
@@ -242,30 +241,54 @@ ul {
     float: right;
 }
 
-.horiz_box_right h3 {
+.features h3 {
     padding: 40px 0 20px;
 }
 
-.horiz_box_right p {
+.horiz_box_right p,
+.vertical_box p {
     width: 80%;
     font-size: 15px;
     margin-bottom: 15px;
 }
 
-.horiz_box_right h4 {
-    font-size: 13px;
-    padding-bottom: 10px;
+/*------vert box----*/
+.vertical_box_container {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.horiz_box_right li {
-    padding-right: 15px;
+.vertical_box {
+    float: left;
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 3px 3px 6px #e6e7e8;
+    padding-bottom: 30px;
 }
 
-.horiz_box_right i {
-    font-size: 13px;
-    color: #ff7a59;
-    padding-right: 8px;
+.vertical_box img {
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
 }
+
+.vertical_box:nth-child(2) {
+    margin: 0 5%;
+}
+
+.vertical_box p {
+    min-width: 105px;
+    margin: 0 auto 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #8a98a6;
+
+}
+
+.vertical_box * {
+    text-align: center;
+}
+
 
 /*------chat icon----*/
 
