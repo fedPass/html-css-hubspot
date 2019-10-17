@@ -179,6 +179,35 @@ button {
     width: 207px; /*togliendo block al button e vedendo la sua lugnhezza*/
 }
 
+/*------features----*/
+.features {
+    background-color: #f5f8fa;
+    height: 700px;
+    border-top: 1px solid #5380ad;
+}
+
+.features img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    padding: 100px 0 20px;
+}
+
+.features h2, .features p {
+    text-align: center;
+    width: 74%; /*per far andare la frase accapo allo stesso punto*/
+    margin: 0 auto;
+}
+
+.features h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+/*------chat icon----*/
+
 #chat_icon {
     position: fixed;
     bottom: 20px;
