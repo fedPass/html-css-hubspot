@@ -302,7 +302,12 @@ ul {
     margin-top: 25px;
 }
 
+/*------data info section----*/
 
+.data_info{
+    height: 400px;
+    background-image: linear-gradient(to top right, #19b2e6, #19e6e3);
+}
 
 /*------chat icon----*/
 
