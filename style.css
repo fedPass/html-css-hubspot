@@ -27,6 +27,12 @@ ul {
     list-style-type: none;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
 .clearfix {
     display: table;
     clear: both;
@@ -58,7 +64,8 @@ ul {
     line-height: 70px;
 }
 
-.fixed_menu_contact span, .nav_menu span {
+.fixed_menu_contact span,
+.nav_menu span {
     padding: 10px;
     color: #8a98a6;
 }
@@ -183,17 +190,13 @@ ul {
     padding: 100px 0 20px;
 }
 
-.features_text h2,
- .features_text p {
+ .features_text p,
+ .data_info p,
+ .data_info h2,
+ .features_text h2 {
     text-align: center;
     width: 74%; /*per far andare la frase accapo allo stesso punto*/
     margin: 0 auto;
-}
-
-.features h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 25px;
 }
 
 .features h4 {
@@ -305,8 +308,62 @@ ul {
 /*------data info section----*/
 
 .data_info{
-    height: 400px;
     background-image: linear-gradient(to top right, #19b2e6, #19e6e3);
+    padding-bottom: 150px;
+}
+
+.data_info h2,
+.data_info p {
+    color: #fff;
+}
+
+.data_info h2 {
+    padding: 150px 0 20px;
+}
+
+.data_container {
+    margin-top: 100px;
+}
+
+.data_row_top,
+.data_row_bottom {
+    width: 100%;
+}
+
+.data_box {
+    float: left;
+    width: 25%;
+    height: 200px;
+    border-right: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.data_row_top .data_box {
+    border-bottom: 1px solid #fff;
+}
+
+.data_row_top:last-child,
+ .data_box:last-child {
+    border-right: 0;
+}
+
+.data_box img {
+    display: block;
+    margin: 0 auto;
+}
+
+.script_number {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.data_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*------chat icon----*/
