@@ -144,8 +144,9 @@ h2 {
 .jumbo {
     /* background-image: linear-gradient(to DIREZIONE, colorestep1, colorestep2)*/
     height: 688px; /* altezza img di sfondo*/
-    background-image: url("img/Immagine.png");
-    background-image: linear-gradient(to top right, #fef8f0, #fff3ee);
+    /*background-image: linear-gradient(to top right, #fef8f0, #fff3ee);
+    background-image: url("img/Immagine.png");*/
+    background-image: linear-gradient(to top right, #fff, #ffe9e0), url("img/Immagine.png");
 }
 
 .jumbo_box {
@@ -234,6 +235,11 @@ h2 {
     width: 90%;
     margin: 50px auto 25px;
     padding-bottom: 30px;
+    transform: scale(1);
+}
+
+.horizontal_box:hover {
+    transform: scale(1.01);
 }
 
 .horiz_box_left {
@@ -259,6 +265,16 @@ h2 {
     margin-bottom: 15px;
 }
 
+.horiz_box_right h4::after {
+    display: inline-block;
+    height: 1px;
+    width: 323px;
+    margin-bottom: 4px;
+    margin-left: 5px;
+    background-color: #5380ad;
+    content: " ";
+}
+
 /*------vert box----*/
 .vertical_box_container {
     width: 90%;
@@ -271,6 +287,11 @@ h2 {
     background-color: #fff;
     box-shadow: 3px 3px 6px #e6e7e8;
     padding-bottom: 30px;
+    transform: scale(1);
+}
+
+.vertical_box:hover {
+transform: scale(1.01);
 }
 
 .vertical_box img {
@@ -310,7 +331,7 @@ h2 {
 /*------data info section----*/
 
 .data_info{
-    background-image: linear-gradient(to top right, #19b2e6, #19e6e3);
+    background-image: linear-gradient(to top right, #00a4bd, #00bda5);
     padding-bottom: 120px;
 }
 
@@ -356,9 +377,22 @@ h2 {
     margin: 0 auto;
 }
 
+.data_script {
+    position: relative;
+}
+
 .script_number {
     font-size: 50px;
     font-weight: 700;
+}
+
+.script_plus {
+    /*height: 90px;
+    line-height: 90px;
+    vertical-align: middle;*/
+    position: absolute;
+    top: 23px;
+
 }
 
 .data_content {
@@ -399,11 +433,12 @@ h2 {
 .logo_image {
     width: 25%;
     float: left;
+    height: 62px;
 }
 
 .logo_image img {
     width: 80%;
-    margin: 10px; auto;
+    margin: 0 10px;
 }
 
 .photo_testimonial {
@@ -414,9 +449,23 @@ h2 {
     width: 350px;
 }
 
-.jumbo_box .bottom {
-
+.jumbo_box.bottom {
+    margin-top: 60px;
 }
+
+/*------footer----*/
+
+footer {
+    background-color: #33475b;
+    color: #fff;
+    height: 400px;
+}
+
+.menu_footer {
+    width: 25%;
+    float: left;
+}
+
 
 /*------chat icon----*/
 
@@ -424,7 +473,7 @@ h2 {
     position: fixed;
     bottom: 20px;
     right: 40px;
-    background-color: #33475b;
+    background-color: #425b76;
     border: 0;
     width: 60px;
     height: 60px;
