@@ -458,14 +458,92 @@ transform: scale(1.01);
 footer {
     background-color: #33475b;
     color: #fff;
-    height: 400px;
+    padding-bottom: 30px;
+}
+
+.menu_container {
+    width: 100%;
+    padding-top: 80px;
 }
 
 .menu_footer {
-    width: 25%;
+    width: 20%;
     float: left;
+    margin-right: 5%;
 }
 
+.list_with_title p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.list_with_title a {
+    color: #cbd6e2;
+    font-size: 14px;
+    line-height: 2.5;
+    text-transform: capitalize; /* posso eliminare parole con meno di 3 lettere????*/
+}
+
+.list_with_title a:hover {
+    color: #7fd1de;
+}
+
+footer span {
+    padding: 10px;
+    color: #cbd6e2;
+}
+
+.button_contact {
+    float: right;
+    width: 25%;
+    margin-top: 20px;
+}
+
+.button_contact.clearfix button {
+    background-color: #fff;
+    border: 0;
+}
+
+.social_nav li {
+    display: inline-block;
+}
+
+.social_nav a {
+    color: #cbd6e2;
+    padding: 0 10px;
+}
+
+.social_nav nav {
+    float: right;
+}
+
+/* #menu_footer_clickable_link::after {
+     display: inline-block;
+    content: " &#x25BC; ";
+}  */
+
+#menu_footer_clickable_link:hover {
+    color: #cbd6e2;
+}
+
+.menu_language {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.menu_language li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu_language a {
+    color: #fff;
+}
+
+.copyright_left a {
+    color: #fff;
+}
 
 /*------chat icon----*/
 
