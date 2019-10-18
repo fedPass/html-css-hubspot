@@ -513,8 +513,10 @@ footer span {
     padding: 0 10px;
 }
 
-.social_nav nav {
+.social_nav {
     float: right;
+    margin-top: 20px;
+    margin-right: 35px;
 }
 
 /* #menu_footer_clickable_link::after {
@@ -529,7 +531,8 @@ footer span {
 .menu_language {
     width: 60%;
     margin: 0 auto;
-    padding: 20px 0;
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 .menu_language li{
@@ -541,8 +544,29 @@ footer span {
     color: #fff;
 }
 
-.copyright_left a {
+.copyright {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.copyright_right a {
     color: #fff;
+    margin-right: 10px;
+    height: 52px;
+    line-height: 52px;
+}
+
+.copyright_left img {
+    display: block;
+}
+
+.copyright_left {
+    float: left;
+    width: 50%;
+}
+
+.copyright_right {
+    float: right;
 }
 
 /*------chat icon----*/
