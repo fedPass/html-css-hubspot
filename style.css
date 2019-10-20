@@ -45,6 +45,10 @@ h2 {
     border: 1px solid #ff7a59;
 }
 
+.get_free:hover {
+    background-color: #ff8f73;
+}
+
 .container {
     width: 70%;
     margin: 0 auto;
@@ -309,7 +313,7 @@ transform: scale(1.01);
     /*min-height: 105px;*/
     margin: 0 auto 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #8a98a6;
+    border-bottom: 1px solid #e0e6ed;
     font-size: 14px;
 
 }
@@ -375,6 +379,7 @@ transform: scale(1.01);
 .data_box img {
     display: block;
     margin: 0 auto;
+    margin-bottom: 5px;
 }
 
 .data_script {
@@ -405,40 +410,51 @@ transform: scale(1.01);
 /*------customer section----*/
 
 .customer {
-    padding-bottom: 120px;
+    margin: 120px 0;
 }
 
 .customer_script {
     float: left;
-    margin: 120px 0;
     text-align: left;
-    width: 40%;
+    width: 20%;
+}
+
+.customer_info {
+    margin-bottom: 100px;
 }
 
 .customer_script p {
     font-size: 18px;
+    line-height: 2;
 }
 
 .customer_logo {
     float: right;
-    margin: 120px 0;
     width: 60%;
 }
 
 .logo_box {
-    width: 80%;
-    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.logo_row {
+    height: 50%;
+    margin-bottom: 30px;
 }
 
 .logo_image {
     width: 25%;
     float: left;
-    height: 62px;
+    height: 60px;
+    position: relative;
 }
 
 .logo_image img {
-    width: 80%;
-    margin: 0 10px;
+    width: 70%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 
 .photo_testimonial {
@@ -484,7 +500,7 @@ footer {
     text-transform: capitalize; /* posso eliminare parole con meno di 3 lettere????*/
 }
 
-.list_with_title a:hover {
+footer a:hover {
     color: #7fd1de;
 }
 
@@ -535,9 +551,14 @@ footer span {
     margin-bottom: 30px;
 }
 
+.menu_language nav {
+    padding-top: 50px;
+}
+
 .menu_language li{
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 2%;
+    width: 15%;
 }
 
 .menu_language a {
@@ -547,6 +568,7 @@ footer span {
 .copyright {
     width: 100%;
     padding: 20px 0;
+    border-top: 1px solid #fff;
 }
 
 .copyright_right a {
@@ -554,6 +576,7 @@ footer span {
     margin-right: 10px;
     height: 52px;
     line-height: 52px;
+    padding-left: 50px;
 }
 
 .copyright_left img {
@@ -567,6 +590,7 @@ footer span {
 
 .copyright_right {
     float: right;
+    padding-left: 5px;
 }
 
 /*------chat icon----*/
