@@ -186,9 +186,9 @@ h2 {
 .jumbo {
     /* background-image: linear-gradient(to DIREZIONE, colorestep1, colorestep2)*/
     height: 688px; /* altezza img di sfondo*/
-    /*background-image: linear-gradient(to top right, #fef8f0, #fff3ee);
-    background-image: url("img/Immagine.png");*/
-    background-image: linear-gradient(to top right, #fff, #ffe9e0), url("img/Immagine.png");
+    /*background-image: url("img/Immagine.png");
+    background-color: linear-gradient(to top right, #fef8f0, #fff3ee);*/
+    background-image: linear-gradient(to top right, #fff, #ffe9e0), url("img/Immagine.png")
 }
 
 .jumbo_box {
