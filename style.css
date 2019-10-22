@@ -33,7 +33,7 @@ h2 {
     margin-bottom: 25px;
 }
 
-.clearfix {
+.clearfix:after {
     display: table;
     clear: both;
     content: "";
@@ -59,6 +59,11 @@ h2 {
 .fixed_menu {
     background-color: #f5f8fa;
     border-bottom: 1px solid #cbd6e2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .fixed_menu_contact {
@@ -114,6 +119,7 @@ h2 {
 .menu {
     background-color: #fff;
     height: 80px;
+    margin-top: 71px;
 }
 
 .logo_container {
@@ -155,7 +161,6 @@ h2 {
 
 .jumbo_box {
     width: 40%;
-    float: left;
 }
 
 .jumbo_box h1 {
@@ -413,14 +418,14 @@ transform: scale(1.01);
     margin: 120px 0;
 }
 
+.customer_info {
+    margin-bottom: 100px;
+}
+
 .customer_script {
     float: left;
     text-align: left;
     width: 20%;
-}
-
-.customer_info {
-    margin-bottom: 100px;
 }
 
 .customer_script p {
@@ -451,10 +456,15 @@ transform: scale(1.01);
 
 .logo_image img {
     width: 70%;
-    /* position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+}
+
+.jumbo_box.bottom {
+    margin-top: 60px;
+    float: left;
 }
 
 .photo_testimonial {
@@ -463,10 +473,6 @@ transform: scale(1.01);
 
 .photo_testimonial img {
     width: 350px;
-}
-
-.jumbo_box.bottom {
-    margin-top: 60px;
 }
 
 /*------footer----*/
@@ -536,7 +542,7 @@ footer span {
 }
 
 /* #menu_footer_clickable_link::after {
-     display: inline-block;
+    display: inline-block;
     content: " &#x25BC; ";
 }  */
 
